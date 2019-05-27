@@ -9,12 +9,45 @@
 #import "CBAppDelegate.h"
 #import "SOCKSProxy.h"
 #import "CBRootViewController.h"
+@import AVKit;
+
+@interface CBAppDelegate () <AVAudioPlayerDelegate> {
+    AVAudioPlayer *player;
+}
+@end
 
 @implementation CBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
+    NSError *error;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:&error];
+    if (error) {
+        NSLog(@"Can't fake audio playback: %@", error);
+    }
+
+    NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:@"/audio.m4a"];
+    NSLog(@"Path to play: %@", resourcePath);
+    NSError* err;
+
+    //Initialize our player pointing to the path to our resource
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:
+              [NSURL fileURLWithPath:resourcePath] error:&err];
+
+    if( err ){
+        //bail!
+        NSLog(@"Failed with reason: %@", [err localizedDescription]);
+    }
+    else{
+        //set our delegate and begin playback
+        player.delegate = self;
+        [player play];
+        player.numberOfLoops = -1;
+        player.currentTime = 0;
+        player.volume = 0.0;
+    }
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
