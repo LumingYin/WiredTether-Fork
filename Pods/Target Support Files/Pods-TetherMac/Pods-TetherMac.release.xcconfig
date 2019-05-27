@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CocoaAsyncSocket" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/ProxyKit" "${PODS_ROOT}/Headers/Public/libplist" "${PODS_ROOT}/Headers/Public/libusbmuxd" "$(SDKROOT)/usr/include/libxml2" "${PODS_ROOT}/libplist/include/" "${PODS_ROOT}/libplist/include/"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket-macOS" "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack-macOS" "${PODS_CONFIGURATION_BUILD_DIR}/ProxyKit-macOS" "${PODS_CONFIGURATION_BUILD_DIR}/libplist" "${PODS_CONFIGURATION_BUILD_DIR}/libusbmuxd"
+OTHER_CFLAGS = $(inherited) -DHAS_PLIST
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CocoaAsyncSocket-macOS" -l"CocoaLumberjack-macOS" -l"ProxyKit-macOS" -l"libplist" -l"libusbmuxd" -l"xml2" -framework "CoreServices" -framework "Security"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
