@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CBDeviceWindowController">
@@ -14,28 +16,27 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" animationBehavior="default" id="1">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Wired Tether Receiver" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="1">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="595" height="305"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1129"/>
             <view key="contentView" id="2">
-                <rect key="frame" x="0.0" y="0.0" width="595" height="305"/>
+                <rect key="frame" x="0.0" y="0.0" width="595" height="296"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cej-YJ-dtF">
-                        <rect key="frame" x="-1" y="41" width="597" height="265"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="-1" y="41" width="326" height="256"/>
                         <clipView key="contentView" id="fnM-fe-MaB">
-                            <rect key="frame" x="1" y="17" width="595" height="247"/>
+                            <rect key="frame" x="1" y="0.0" width="324" height="255"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="R7b-KU-fqG" viewBased="YES" id="2UG-KQ-Ahb">
-                                    <rect key="frame" x="0.0" y="0.0" width="595" height="247"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="324" height="238"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
                                         <tableColumn identifier="ProductIDCell" width="122" minWidth="40" maxWidth="1000" id="rVa-hV-gMK">
@@ -60,7 +61,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="4KM-ee-7d0">
                                                                 <font key="font" metaFont="system"/>
-                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
@@ -71,7 +72,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="UDIDCell" width="467" minWidth="40" maxWidth="1000" id="q3L-CP-uGt">
+                                        <tableColumn identifier="UDIDCell" width="196" minWidth="40" maxWidth="1000" id="q3L-CP-uGt">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="UDID">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -85,15 +86,15 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="UDIDCell" id="SiD-V0-EF3">
-                                                    <rect key="frame" x="126" y="1" width="467" height="17"/>
+                                                    <rect key="frame" x="126" y="1" width="196" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HET-AV-aYg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="467" height="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="196" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="wQI-jZ-QLe">
                                                                 <font key="font" metaFont="system"/>
-                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
@@ -107,7 +108,6 @@
                                     </tableColumns>
                                 </tableView>
                             </subviews>
-                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="dlU-5a-BHb">
                             <rect key="frame" x="1" y="1" width="0.0" height="16"/>
@@ -118,13 +118,12 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" id="R7b-KU-fqG">
-                            <rect key="frame" x="0.0" y="0.0" width="595" height="17"/>
+                            <rect key="frame" x="0.0" y="0.0" width="324" height="17"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sue-YU-LfJ">
                         <rect key="frame" x="504" y="2" width="87" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3FU-29-kNz">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -134,48 +133,37 @@
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZXH-Mq-bEb">
-                        <rect key="frame" x="94" y="9" width="70" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="93" y="9" width="70" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="GnF-iE-gb3"/>
                         </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="8000" drawsBackground="YES" id="DLV-Zo-zSC">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" localizesFormat="NO" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="0" maximumFractionDigits="3" id="CCU-xj-aGA">
-                                <real key="roundingIncrement" value="0.0"/>
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" localizesFormat="NO" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="CCU-xj-aGA">
                                 <real key="minimum" value="1"/>
                                 <real key="maximum" value="65535"/>
-                                <metadata>
-                                    <bool key="localizesFormat" value="NO"/>
-                                </metadata>
                             </numberFormatter>
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-u6-zx0">
-                        <rect key="frame" x="262" y="9" width="86" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="259" y="9" width="86" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="86" id="Qmd-z4-BKC"/>
                         </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="8123" drawsBackground="YES" id="XdH-Rr-36G">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" localizesFormat="NO" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="0" maximumFractionDigits="3" id="tcq-YS-yxJ">
-                                <real key="roundingIncrement" value="0.0"/>
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" localizesFormat="NO" numberStyle="decimal" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="tcq-YS-yxJ">
                                 <real key="minimum" value="1"/>
                                 <real key="maximum" value="65535"/>
-                                <metadata>
-                                    <bool key="localizesFormat" value="NO"/>
-                                </metadata>
                             </numberFormatter>
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pdZ-J3-sBb">
-                        <rect key="frame" x="18" y="12" width="70" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="18" y="12" width="69" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Local Port:" id="r3D-Xw-u8p">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -183,12 +171,25 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dgl-Rc-5Df">
-                        <rect key="frame" x="170" y="12" width="86" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="169" y="12" width="84" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Remote Port:" id="dHi-sF-BnW">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="tAy-pR-wmH">
+                        <rect key="frame" x="331" y="50" width="256" height="238"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="252" id="BXt-E9-aGr"/>
+                        </constraints>
+                        <textFieldCell key="cell" selectable="YES" id="btg-cM-MaB">
+                            <font key="font" metaFont="system"/>
+                            <mutableString key="title">Open Firefox and go to Preferences -&gt; Network Settings -&gt; Settings... -&gt; Manual Proxy Configuration.   Delete all existing entries for HTTP proxy, SSL proxy and FTP proxy.   Enter 127.0.0.1 for SOCKS Host and 8000 for the port and make sure SOCKS v5 is selected.
+
+Then, go to about:config in the address bar and change network.proxy.socks_remote_dns to true.</mutableString>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                 </subviews>
@@ -199,10 +200,13 @@
                     <constraint firstItem="ZXH-Mq-bEb" firstAttribute="centerY" secondItem="pdZ-J3-sBb" secondAttribute="centerY" id="F2e-10-dsS"/>
                     <constraint firstItem="oUG-u6-zx0" firstAttribute="leading" secondItem="dgl-Rc-5Df" secondAttribute="trailing" constant="8" symbolic="YES" id="FIq-lF-1zY"/>
                     <constraint firstItem="dgl-Rc-5Df" firstAttribute="leading" secondItem="ZXH-Mq-bEb" secondAttribute="trailing" constant="8" symbolic="YES" id="N6b-0m-Dld"/>
+                    <constraint firstItem="tAy-pR-wmH" firstAttribute="leading" secondItem="Cej-YJ-dtF" secondAttribute="trailing" constant="8" id="Q7h-TZ-x5J"/>
+                    <constraint firstItem="tAy-pR-wmH" firstAttribute="top" secondItem="2" secondAttribute="top" constant="8" id="dQ5-uK-Eu5"/>
+                    <constraint firstItem="oUG-u6-zx0" firstAttribute="top" secondItem="tAy-pR-wmH" secondAttribute="bottom" constant="19" id="dyG-9x-979"/>
                     <constraint firstItem="pdZ-J3-sBb" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="f7p-Hj-7ex"/>
                     <constraint firstItem="dgl-Rc-5Df" firstAttribute="baseline" secondItem="sue-YU-LfJ" secondAttribute="baseline" id="giE-QP-tNb"/>
+                    <constraint firstAttribute="trailing" secondItem="tAy-pR-wmH" secondAttribute="trailing" constant="10" id="irN-6W-20Z"/>
                     <constraint firstItem="Cej-YJ-dtF" firstAttribute="top" secondItem="2" secondAttribute="top" constant="-1" id="jGF-P8-91b"/>
-                    <constraint firstAttribute="trailing" secondItem="Cej-YJ-dtF" secondAttribute="trailing" constant="-1" id="jwC-6k-K9y"/>
                     <constraint firstItem="Cej-YJ-dtF" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="-1" id="oRX-2N-lMc"/>
                     <constraint firstItem="sue-YU-LfJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oUG-u6-zx0" secondAttribute="trailing" constant="84" id="r3e-gY-HTf"/>
                     <constraint firstItem="ZXH-Mq-bEb" firstAttribute="leading" secondItem="pdZ-J3-sBb" secondAttribute="trailing" constant="8" symbolic="YES" id="t6I-r6-z3Q"/>
@@ -213,6 +217,7 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="4"/>
             </connections>
+            <point key="canvasLocation" x="138.5" y="147.5"/>
         </window>
     </objects>
 </document>

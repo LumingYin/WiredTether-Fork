@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		320CC252229B9D280042570F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320CC251229B9D280042570F /* LaunchScreen.storyboard */; };
 		320CC254229BA5760042570F /* audio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 320CC253229BA5760042570F /* audio.m4a */; };
+		320CC256229BA8020042570F /* hotspot.icns in Resources */ = {isa = PBXBuildFile; fileRef = 320CC255229BA8020042570F /* hotspot.icns */; };
 		792A975176EF958F9017BB0C /* libPods-TetherMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D10B99597E92A00BA41FF0 /* libPods-TetherMac.a */; };
 		918B6E2D6ACB6C9377211443 /* libPods-Tether.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F84CE8B59F21EB676DD7397 /* libPods-Tether.a */; };
 		ACD3200107971EE643A47477 /* libPods-com.chrisballinger.CBTunService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9059EC725D23D3908D44779 /* libPods-com.chrisballinger.CBTunService.a */; };
@@ -98,6 +99,7 @@
 		0F84CE8B59F21EB676DD7397 /* libPods-Tether.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tether.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		320CC251229B9D280042570F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320CC253229BA5760042570F /* audio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.m4a; sourceTree = "<group>"; };
+		320CC255229BA8020042570F /* hotspot.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = hotspot.icns; sourceTree = "<group>"; };
 		4816E30F1BD11343B5FDF320 /* Pods-com.chrisballinger.CBTunService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.chrisballinger.CBTunService.debug.xcconfig"; path = "Target Support Files/Pods-com.chrisballinger.CBTunService/Pods-com.chrisballinger.CBTunService.debug.xcconfig"; sourceTree = "<group>"; };
 		93FC6F02CDD2775A80EAC374 /* Pods-Tether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tether.debug.xcconfig"; path = "Target Support Files/Pods-Tether/Pods-Tether.debug.xcconfig"; sourceTree = "<group>"; };
 		96D10B99597E92A00BA41FF0 /* libPods-TetherMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TetherMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				D90E3260182F07DC00A6F642 /* TetherMac-Info.plist */,
+				320CC255229BA8020042570F /* hotspot.icns */,
 				D90E3261182F07DC00A6F642 /* InfoPlist.strings */,
 				D9B767C8184A88BA000566D6 /* main-mac.m */,
 				D90E3264182F07DC00A6F642 /* main.m */,
@@ -505,6 +508,7 @@
 			files = (
 				D90E3263182F07DC00A6F642 /* InfoPlist.strings in Resources */,
 				D90E3271182F07DC00A6F642 /* Images.xcassets in Resources */,
+				320CC256229BA8020042570F /* hotspot.icns in Resources */,
 				D90E3269182F07DC00A6F642 /* Credits.rtf in Resources */,
 				D90E326F182F07DC00A6F642 /* MainMenu.xib in Resources */,
 				D90E3298182F18CC00A6F642 /* CBDeviceWindowController.xib in Resources */,
